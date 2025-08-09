@@ -18,3 +18,17 @@
 - `translated_news/` - 存放翻译后的新闻数据
 
 ## 安装依赖
+
+确保已安装Python和pip。
+运行以下命令安装依赖：
+```bash
+pip install requests feedparser opena transformers、torch
+```
+
+# 模型参数
+
+本地模型使用`Qwen3-0.6B`模型，请自行下载更换地址 "D:\model_bf\Qwen3-0.6B"。
+
+# 使用方法
+1. 运行`1.py`脚本，将RSS源的URL 添加到`rss_urls`列表中
+2. 运行`2.py`脚本，将获取的RSS源数据进行翻译
